@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Fruit Form</h2>
+    <form [formGroup]="fruitForm" (ngSubmit)="saveFruit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput id="name" formControlName="name">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Price</mat-label>
+        <input matInput id="price" formControlName="price" type="number">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Quantity</mat-label>
+        <input matInput id="quantity" formControlName="quantity" type="number">
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit">Save</button>
+      <button mat-raised-button routerLink="/" color="warn">Cancel</button>
+    </form>
+  </div>
+  
